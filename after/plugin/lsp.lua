@@ -8,7 +8,7 @@ lsp.ensure_installed({
   'bashls', -- bash
   'cssls',  -- css
   'html',   -- html
---'hls',    -- haskell
+  'hls',    -- haskell
   'jsonls', -- json
   'jdtls',  -- java
   'zls',    -- zig
@@ -18,6 +18,7 @@ lsp.ensure_installed({
   'lua_ls', -- lua
   'rust_analyzer',  -- rust
   'taplo',  -- toml
+  --'prolog_lsp', -- prolog
 })
 
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())

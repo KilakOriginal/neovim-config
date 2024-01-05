@@ -74,4 +74,11 @@ return require('packer').startup(function(use)
     config = function() require("nvim-autopairs").setup {} end
   }
 
+  use {
+  'glepnir/dashboard-nvim',
+  as = 'dashboard',
+  event = 'VimEnter',
+  requires = {'nvim-tree/nvim-web-devicons'}
+  }
+
 end)
